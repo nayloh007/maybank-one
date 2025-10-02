@@ -12,27 +12,12 @@ services:
       - key: USE_SQLITE
         value: false
       - key: POSTGRES_URL
-        fromDatabase:
-          name: maybank-db
-          property: connectionString
+        value: postgresql://oeasy:mKEagGR9ld5yuLWSvBuwhXrGVVVc9nay@dpg-d39v2l3uibrs73f6stk0-a.singapore-postgres.render.com/oeasy
       - key: POSTGRES_HOST
-        fromDatabase:
-          name: maybank-db
-          property: host
+        value: dpg-d39v2l3uibrs73f6stk0-a.singapore-postgres.render.com
       - key: POSTGRES_USER
-        fromDatabase:
-          name: maybank-db
-          property: user
+        value: oeasy
       - key: POSTGRES_PASSWORD
-        fromDatabase:
-          name: maybank-db
-          property: password
+        value: mKEagGR9ld5yuLWSvBuwhXrGVVVc9nay
       - key: POSTGRES_DATABASE
-        fromDatabase:
-          name: maybank-db
-          property: database
-    
-  - type: postgres
-    name: maybank-db
-    ipAllowList: []
-    plan: free
+        value: oeasy
