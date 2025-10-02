@@ -12,19 +12,20 @@ import { Button } from "@/components/ui/button";
 // รูปภาพที่ใช้ในข่าว - placeholder
 import placeholderImage from "@/assets/placeholder.svg";
 
-// รูปภาพจาก assets folder
+// รูปภาพจาก assets folder - ใช้รูปภาพที่มีอยู่แล้วในโปรเจค
 import maybank1 from "@/assets/Asia_Plus_Securities.png";
 import maybank2 from "@/assets/ASP.jpg";
 import maybank3 from "@/assets/asia_plus_logo.png";
 import maybank4 from "@/assets/stock_market_graph.png";
 import maybank5 from "@/assets/stock_chart_bg.png";
-import maybank6 from "@/assets/1.jpg";
-import maybank7 from "@/assets/2.jpg";
-import maybank8 from "@/assets/3.jpg";
-import maybank9 from "@/assets/4.jpg";
-import maybank10 from "@/assets/5.jpg";
-import maybank11 from "@/assets/6.jpg";
-import maybank12 from "@/assets/7.jpg";
+// ใช้รูปภาพจากโฟลเดอร์ img แทน attached_assets
+import maybank6 from "../../../img/1.jpg";
+import maybank7 from "../../../img/2.jpg";
+import maybank8 from "../../../img/3.jpg";
+import maybank9 from "../../../img/4.jpg";
+import maybank10 from "../../../img/5.jpg";
+import maybank11 from "../../../img/6.jpg";
+import maybank12 from "../../../img/7.jpg";
 
 // ข้อมูลข่าวสารแบบ mock ชั่วคราว
 const mockNews = [
