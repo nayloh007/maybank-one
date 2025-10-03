@@ -12,20 +12,7 @@ import { Button } from "@/components/ui/button";
 // รูปภาพที่ใช้ในข่าว - placeholder
 import placeholderImage from "@/assets/placeholder.svg";
 
-// รูปภาพจาก assets folder - ใช้รูปภาพที่มีอยู่แล้วในโปรเจค
-import maybank1 from "@/assets/Asia_Plus_Securities.png";
-import maybank2 from "@/assets/ASP.jpg";
-import maybank3 from "@/assets/asia_plus_logo.png";
-import maybank4 from "@/assets/stock_market_graph.png";
-import maybank5 from "@/assets/stock_chart_bg.png";
-// ใช้รูปภาพจากโฟลเดอร์ img แทน attached_assets
-import maybank6 from "../../../img/1.jpg";
-import maybank7 from "../../../img/2.jpg";
-import maybank8 from "../../../img/3.jpg";
-import maybank9 from "../../../img/4.jpg";
-import maybank10 from "../../../img/5.jpg";
-import maybank11 from "../../../img/6.jpg";
-import maybank12 from "../../../img/7.jpg";
+// ใช้รูปภาพ placeholder ที่มีอยู่จริง เพื่อลดความเสี่ยง build ล้มเหลว
 
 // ข้อมูลข่าวสารแบบ mock ชั่วคราว
 const mockNews = [
@@ -33,7 +20,7 @@ const mockNews = [
     id: 1,
     title: "Bitcoin (BTC) ทะลุ 80,000 ดอลลาร์แล้ว นักวิเคราะห์คาดอาจแตะ 100,000 ดอลลาร์ในปีนี้",
     summary: "Bitcoin ทำราคาสูงสุดใหม่ที่ 80,000 ดอลลาร์ หลังจากมีการปรับตัวในเชิงบวกอย่างต่อเนื่อง นักวิเคราะห์ชั้นนำคาดการณ์ว่าอาจจะแตะ 100,000 ดอลลาร์ภายในสิ้นปีนี้",
-    imageUrl: maybank8,
+    imageUrl: placeholderImage,
     date: "15 พ.ค. 2025",
     category: "market",
     isFeatured: true,
@@ -43,7 +30,7 @@ const mockNews = [
     id: 2,
     title: "Ethereum (ETH) เตรียมปรับปรุงโปรโตคอลใหญ่ คาดว่าลดค่าธรรมเนียมได้ถึง 90%",
     summary: "Ethereum เตรียมอัปเดตโปรโตคอลครั้งใหญ่ซึ่งจะช่วยลดค่าธรรมเนียมการทำธุรกรรมลงได้ถึง 90% ผู้ใช้สามารถประหยัดเงินได้มากขึ้นในการใช้งานบนเครือข่าย",
-    imageUrl: maybank9,
+    imageUrl: placeholderImage,
     date: "14 พ.ค. 2025",
     category: "tech",
     isFeatured: false,
@@ -53,7 +40,7 @@ const mockNews = [
     id: 3,
     title: "Maybank เปิดตัวฟีเจอร์ใหม่ เพิ่มความปลอดภัยในการเข้าถึงบัญชี",
     summary: "Maybank เตรียมเปิดตัวฟีเจอร์ใหม่ที่รองรับการยืนยันตัวตนด้วยเทคโนโลยีสมัยใหม่ ช่วยให้ผู้ใช้สามารถเข้าถึงบัญชีได้อย่างปลอดภัยมากขึ้น",
-    imageUrl: maybank11,
+    imageUrl: placeholderImage,
     date: "12 พ.ค. 2025",
     category: "asiap",
     isFeatured: true,
@@ -63,7 +50,7 @@ const mockNews = [
     id: 4,
     title: "กระทรวงการคลังไทยเตรียมออกกฎหมายภาษี NFT และสินทรัพย์ดิจิทัล",
     summary: "กระทรวงการคลังไทยเตรียมออกกฎหมายภาษีสำหรับ NFT และสินทรัพย์ดิจิทัล คาดว่าจะมีผลบังคับใช้ในช่วงไตรมาสที่ 4 ของปีนี้ นักลงทุนควรเตรียมตัวรับมือ",
-    imageUrl: maybank5,
+    imageUrl: placeholderImage,
     date: "10 พ.ค. 2025",
     category: "regulation",
     isFeatured: false,
@@ -73,7 +60,7 @@ const mockNews = [
     id: 5,
     title: "Maybank Chain เปิดทดสอบการใช้ THB Programmable Payment บนบล็อกเชน",
     summary: "Maybank Chain เปิดทดสอบการใช้ THB Programmable Payment ซึ่งเป็นสื่อกลางการชำระเงินด้วยเงินบาทบนระบบบล็อกเชน พร้อมให้ทดสอบการใช้งานภายในปี 2025",
-    imageUrl: maybank1,
+    imageUrl: placeholderImage,
     date: "8 พ.ค. 2025",
     category: "regulation",
     isFeatured: false,
@@ -83,7 +70,7 @@ const mockNews = [
     id: 6,
     title: "Maybank Exchange ประกาศเปิดเทรด Grass (GRASS) คริปโตน้องใหม่ล่าสุด",
     summary: "Maybank Exchange ประกาศเปิดให้ฝาก-ถอน และเทรด Grass (GRASS) คริปโตเคอร์เรนซี่น้องใหม่ล่าสุด เริ่มฝาก-ถอนวันที่ 9 เมษายน และเปิดเทรด 10 เมษายน 2025",
-    imageUrl: maybank3,
+    imageUrl: placeholderImage,
     date: "5 พ.ค. 2025",
     category: "market",
     isFeatured: false,
@@ -93,7 +80,7 @@ const mockNews = [
     id: 7,
     title: "Maybank จัดงาน BLOCKATHON 2023 ชวนนักพัฒนามาร่วมสร้างนวัตกรรมบล็อกเชน",
     summary: "Maybank จัดงาน BLOCKATHON 2023 เชิญชวนนักพัฒนาและผู้สนใจเทคโนโลยีบล็อกเชนมาร่วมสร้างสรรค์นวัตกรรมและแอปพลิเคชันบนเครือข่าย Maybank Chain",
-    imageUrl: maybank4,
+    imageUrl: placeholderImage,
     date: "3 พ.ค. 2025",
     category: "asiap",
     isFeatured: true,
@@ -103,7 +90,7 @@ const mockNews = [
     id: 8,
     title: "วิธีสมัคร Maybank และยืนยันตัวตนล่าสุด 2024 แบบละเอียดทุกขั้นตอน",
     summary: "แนะนำวิธีการสมัครและยืนยันตัวตนบนแพลตฟอร์ม Maybank แบบละเอียดทุกขั้นตอน อัปเดตล่าสุดปี 2024 สำหรับผู้ที่สนใจเริ่มต้นลงทุนในคริปโตเคอร์เคอร์",
-    imageUrl: maybank2,
+    imageUrl: placeholderImage,
     date: "1 พ.ค. 2025",
     category: "market",
     isFeatured: false,
@@ -113,7 +100,7 @@ const mockNews = [
     id: 9,
     title: "Maybank เตรียมเปิดตัวแอปพลิเคชันใหม่ MBK Smart พร้อมฟีเจอร์ที่น่าสนใจ",
     summary: "Maybank ประกาศเตรียมเปิดตัวแอปพลิเคชันใหม่ MBK Smart ที่มีฟีเจอร์การวิเคราะห์ตลาดขั้นสูง พร้อมให้ผู้ใช้สามารถเข้าถึงการเทรดได้ทุกที่ทุกเวลา",
-    imageUrl: maybank2,
+    imageUrl: placeholderImage,
     date: "30 เม.ย. 2025",
     category: "asiap",
     isFeatured: false,
@@ -123,7 +110,7 @@ const mockNews = [
     id: 10,
     title: "Maybank NEXT เปิดตัว Digital Hub ศูนย์รวมบริการดิจิทัลครบวงจร",
     summary: "Maybank NEXT เปิดตัวบริการ Digital Hub ศูนย์รวมบริการดิจิทัลครบวงจร ทั้งการลงทุน การเงิน และไลฟ์สไตล์ รองรับการใช้งานทั้งคริปโตและสินทรัพย์ดิจิทัลรูปแบบอื่น",
-    imageUrl: maybank11,
+    imageUrl: placeholderImage,
     date: "28 เม.ย. 2025",
     category: "asiap",
     isFeatured: true,
