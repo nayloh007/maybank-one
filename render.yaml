@@ -2,8 +2,8 @@ services:
   - type: web
     name: maybank-trading-platform
     env: node
-    buildCommand: yarn && yarn build
-    startCommand: yarn start
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
     plan: starter
     envVars:
       - key: NODE_ENV
@@ -12,6 +12,8 @@ services:
         value: 18.18.0
       - key: USE_SQLITE
         value: false
+      - key: DATABASE_URL
+        value: postgresql://oeasy:mKEagGR9ld5yuLWSvBuwhXrGVVVc9nay@dpg-d39v2l3uibrs73f6stk0-a.singapore-postgres.render.com/oeasy
       - key: POSTGRES_URL
         value: postgresql://oeasy:mKEagGR9ld5yuLWSvBuwhXrGVVVc9nay@dpg-d39v2l3uibrs73f6stk0-a.singapore-postgres.render.com/oeasy
       - key: POSTGRES_HOST
